@@ -28,4 +28,4 @@ This project is programmed on NUCLEO-f446re with a MCUFriend 3.5" ILI9486 displa
 ## DEMO
 [Latest vid](https://www.youtube.com/watch?v=H7QsbLGEz44)
 
-![ScreenShot](ILI9486-ADC/Demo/20180724_190016.jpg)
+![ScreenShot](https://raw.githubusercontent.com/khaman1/ILI9486-ADC/master/Demo/20180724_190016.jpg)
