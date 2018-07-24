@@ -2,8 +2,8 @@
 
 This project is programmed on NUCLEO-f446re with a MCUFriend 3.5" ILI9486 display. There are some additional pins needed for the project as well:
 
-- ADC pin: A5
-- Led pin: PC3
+- ADC pin: A5 (Potentiometer)
+- 2 LED pins: PC3
 - LCD shield: hooked into the NUCLEO as followed:
 
     LCD       |     NUCLEO
