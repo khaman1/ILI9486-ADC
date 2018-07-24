@@ -21,4 +21,6 @@ This project is programmed on NUCLEO-f446re with a MCUFriend 3.5" ILI9486 displa
     RD        |     A0
     
 ## INSTALLATION    
-Install Keil ARM and open the main project Nucleo_read_analog_value.uvprojx to upload the code
+- Install Keil ARM, Keil.STM32F4xx_DFP.2.13.0, ST-Link driver
+- Open the main project Nucleo_read_analog_value.uvprojx by Keil to upload the code
+- Enjoy
