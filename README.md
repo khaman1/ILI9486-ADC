@@ -1,6 +1,6 @@
 # ILI9486-ADC
 
-This project is programmed on NUCLEO-f446re with a MCUFriend 3.5" ILI9486 display. There are some additional pins needed for the project as well:
+This project is programmed by C++ on NUCLEO-f446re with a MCUFriend 3.5" ILI9486 display. There are some additional pins needed for the project as well:
 
 - ADC pin: A5 (Potentiometer)
 - 2 LED pins: PC3
@@ -24,7 +24,6 @@ The number of ADC samples is defined as ADC_SAMPLES_SIZE in ILI9486_funcs.cpp an
 
 If you want to generally run a test on LCD to see the pixels or how the LCD generally functions, so run the command myLCD.test1().
 
-The code is written by C++
 
 ## INSTALLATION    
 - Install Keil ARM, Keil.STM32F4xx_DFP.2.13.0, ST-Link driver
