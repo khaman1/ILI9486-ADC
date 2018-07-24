@@ -5,9 +5,13 @@ This project is programmed on NUCLEO-f446re with a MCUFriend 3.5" ILI9486 displa
 - ADC pin: A5
 - Led pin: PC3
 - LCD shield: hooked into the NUCLEO as followed:
+
     LCD             NUCLEO
+    
     D0-D7     |     D8, D9, D2, D3, D4, D5, D6, D7 
+    
     CS        |     A3
+    
     RST       |     A4 
     DC        |     A2
     WR        |     A1 
