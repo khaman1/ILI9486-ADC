@@ -26,5 +26,6 @@ This project is programmed on NUCLEO-f446re with a MCUFriend 3.5" ILI9486 displa
 - Enjoy
 
 ## DEMO
-https://www.youtube.com/watch?v=H7QsbLGEz44
-[Quora profile link for Adam D'Angelo](http://www.quora.com/Adam-DAngelo)
+[Latest vid](https://www.youtube.com/watch?v=H7QsbLGEz44)
+
+![ScreenShot](ILI9486-ADC/Demo/20180724_190016.jpg)
