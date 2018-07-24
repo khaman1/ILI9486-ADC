@@ -5,7 +5,7 @@
 #include "Arial43x48_numb.h"
 
 
-DigitalOut led(LED1);
+DigitalOut led(PC_3);
 
 
 
@@ -22,8 +22,8 @@ int main()
 	myLCD.drawXYaxis();
 	wait(1);
 	
-	
+	led=1;
 	myLCD.updateADCPoints();
-	
+	led=0;
 	
 }

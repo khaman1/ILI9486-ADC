@@ -252,6 +252,8 @@ void ILI9486::drawXYaxis()
 AnalogIn analog_val(A5);
 Serial pc(USBTX, USBRX);
 
+int ADCval[ADC_SAMPLES_SIZE];
+
 
 
 void ILI9486::updateADCPoints()
@@ -261,15 +263,17 @@ void ILI9486::updateADCPoints()
 	int val;
 	int idx,row,col;
 	
+	pc.baud (115200);
+	
 	if(ADC_SAMPLES_SIZE == 2000)
 	{
 		for(int i=1;i <= ADC_SAMPLES_SIZE; i++)
 		{
 			if(i%5==1)				max = INT_MIN;
 			
-			val = analog_val.read()*3300;
+			ADCval[i] = analog_val.read()*3300;
 			
-			if(max < val) 		max = val;
+			if(max < ADCval[i]) 		max = ADCval[i];
 			
 			if(i%5==0) // Update to LCD
 			{
@@ -278,7 +282,7 @@ void ILI9486::updateADCPoints()
 				row = idx/25;
 				col = idx - row*25;
 				
-				//printf("row=%d, col=%d, i=%d\n",row,col,i);
+				printf("row=%d, col=%d, i=%d -> max = %d\n",row,col,i,max);
 				fillCircle(60+15*col,250-15*row,4,max);
 			}
 		}
@@ -286,15 +290,3 @@ void ILI9486::updateADCPoints()
 	
 	//pc.printf("%.0f", analog_val.read()*3300);
 }
-////	takeADCSamples();
-////	
-////	//pc.printf("measure =");
-////	
-////	for(int row=0; row<10; row++)
-////		for(int col=0; col<40; col++)
-////		{
-////			fillCircle(50+20*col,245-20*row,5,max[row*40+col]);	
-////			//pc.printf(" %.0fmV ", max[row*40+col]);
-////		}
-////	
-////}
