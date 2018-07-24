@@ -13,8 +13,11 @@ This project is programmed on NUCLEO-f446re with a MCUFriend 3.5" ILI9486 displa
     CS        |     A3
     
     RST       |     A4 
+    
     DC        |     A2
+    
     WR        |     A1 
+    
     RD        |     A0
     
 ## INSTALLATION    
